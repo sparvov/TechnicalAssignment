@@ -1,0 +1,19 @@
+﻿Please provide solution for the tasks below. Share you code on github or send project. 3th task does not require coding, just describe the solution. Do not spend more than 3 hours.
+
+1. Puzzle
+Java class has three int fields which may be changed in the limited range:
+int a; // may change from a1 to a2
+int b; // may change from b1 to b2
+int c; // may change from c1 to c2
+where a1, a2, ... are some constants. Implement hashCode method for this class without collisions (assuming that the product of ranges does not exceed Integer.MAX_VALUE).
+
+2. Refactoring
+Refactor the code fix error, make sure code complies with Java coding standards. Send refactored code and add comments in code explaining each change.
+File – User.java
+
+3. Architecture
+Our application has to pass integration tests. Data source for these tests is located on the external test environment.
+However, this external test environment allows to run integration test suite against it one at a time.
+If several instances are executed against it, test environment crashes and tests will fail randomly.
+Please suggest possible solutions how to ensure integration tests will always pass. Describe pros and cons of these solutions.
+
