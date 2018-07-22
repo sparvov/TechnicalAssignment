@@ -1,0 +1,17 @@
+The right solution can be made only if root cause of issue with integration tests/environments is found.
+So, the first step is to investigate and find the root cause of the problem.
+
+It can be as following:
+
+1. The test environment is not stateless. It means, that different tests from different applications affect each other.
+In such a case the solution can be to make the test environments stateless, to separate every test flow from each other.
+
+2. The test environment falls due to its load capacity is not enough.
+The solution may be with using a scalability mechanism including a load balancer. This solution can be very expensive
+for testing purpose, but anyway, in some cases it can be considered.
+The second approach is to redesign integration test cases to exclude such tests that can be done with unit tests.
+It can reduce the number of integration tests and overall test environment load.
+
+3. Some tests or test environmental flow are designed with mistakes such as incorrect transaction mechanism
+or some other cases which can result unstable behaviour of test ecosystem. This scenario is related to the first paragraph,
+so solution is finding and fixing such issues.
